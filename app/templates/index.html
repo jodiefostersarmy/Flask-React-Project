@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+<!-- Extends establishes ingeritance link between the two templates, index and base, so that Jinja2 knows to embed index to base when called. -->
+
+{% block content %}
+    <!-- The stuff in curly braces are called dynamic content -->
+    <!-- These placeholders represent parts of the page that are variable and will only be known at runtime. -->
+    <h1>Hello, {{ user.username }}!</h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    {% endfor %}
+{% endblock %}
