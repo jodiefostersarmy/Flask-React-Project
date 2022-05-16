@@ -49,11 +49,11 @@ class User(UserMixin, db.Model):
     def __repr__(self):
         return '<User {}>'.format(self.username)
 
-    def follow(self.user):
+    def follow(self,user):
         if not self.is_following(user):
             self.followed.append(user)
     
-    def unfollow(self.user):
+    def unfollow(self,user):
         if self.is_following(user):
             self.followed.remove(user)
     
