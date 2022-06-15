@@ -3,6 +3,7 @@ import unittest
 from app import app, db
 from app.models import User, Post
 
+# each time a feature is added, you will need to write a unittest for it
 class UserModelCase(unittest.TestCase):
     def setUp(self):
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'
