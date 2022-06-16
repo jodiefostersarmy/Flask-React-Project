@@ -41,3 +41,4 @@ microblog.log*
 
 # Personal Notes
 personal_notes.md
+.flaskenv
