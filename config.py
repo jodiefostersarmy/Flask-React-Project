@@ -19,3 +19,5 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['ants.imessage@gmail.com']
     POSTS_PER_PAGE = 10
+
+    # EMAIL SET UP IS IN CHAPTER 7 AND 10
